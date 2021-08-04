@@ -11,7 +11,7 @@ tags: ["vuejs", "spring", "java"]
 This post is about setting up a web application project with VueJS frontend and spring boot backend. The project will compile as a single fat jar which will include both frontend and backend components. Maven will handle both UI and API builds.
 Choose a name for the project `vuejs-spring-template`, write a little readme in the project directory and then follow up.
 
-Finished code is [here]()
+Finished code is [here](https://github.com/ranuzz/vuejs-spring-template)
 
 ## VueJS Scaffold
 
@@ -94,7 +94,7 @@ We have `three` `pom.xml` files now and we will edit them one-by-one. The projec
 * make sure packaging is pom : `<packaging>pom</packaging>`
 * Artifact Id is project name
 
-[Final]()
+[Final pom.xml](https://github.com/ranuzz/vuejs-spring-template/blob/main/pom.xml)
 
 ## WebApp `pom.xml`
 
@@ -102,7 +102,7 @@ We have `three` `pom.xml` files now and we will edit them one-by-one. The projec
 * `<parent>` tag will refer to the project `pom`
 * We will be using `https://github.com/eirslett/frontend-maven-plugin` to compile the VueJS project.
 
-[Final]()
+[Final pom.xml](https://github.com/ranuzz/vuejs-spring-template/blob/main/webapp/pom.xml)
 
 ## API `pom.xml`
 
@@ -140,6 +140,8 @@ We have `three` `pom.xml` files now and we will edit them one-by-one. The projec
 </plugin>
 ```
 * `H2` will be used for DB
+
+[Final pom.xml](https://github.com/ranuzz/vuejs-spring-template/blob/main/api/pom.xml)
 
 ## Compile and Run
 

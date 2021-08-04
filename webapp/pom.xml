@@ -24,7 +24,6 @@
             <artifactId>frontend-maven-plugin</artifactId>
             <version>${frontend-maven-plugin.version}</version>
             <executions>
-                <!-- Install our node and npm version to run npm/node scripts-->
                 <execution>
                     <id>install node and npm</id>
                     <goals>
@@ -34,20 +33,16 @@
                         <nodeVersion>v14.16.1</nodeVersion>
                     </configuration>
                 </execution>
-                <!-- Install all project dependencies -->
                 <execution>
                     <id>npm install</id>
                     <goals>
                         <goal>npm</goal>
                     </goals>
-                    <!-- optional: default phase is "generate-resources" -->
                     <phase>generate-resources</phase>
-                    <!-- Optional configuration which provides for running any npm command -->
                     <configuration>
                         <arguments>install</arguments>
                     </configuration>
                 </execution>
-                <!-- Build and minify static files -->
                 <execution>
                     <id>npm run build</id>
                     <goals>
