@@ -78,11 +78,9 @@
                       <overwrite>true</overwrite>
                       <resources>
                         <resource>
-                          <directory>${project.parent.basedir}/webapp/dist</directory>
+                          <directory>${project.parent.basedir}/webapp/target/dist</directory>
                           <includes>
-                            <include>css/</include>
-							<include>img/</include>
-							<include>js/</include>
+                            <include>static/</include>
                             <include>index.html</include>
                             <include>favicon.ico</include>
                           </includes>
